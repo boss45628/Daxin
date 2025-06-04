@@ -1,28 +1,8 @@
 export default function Haoxin() {
-  const users = [
-    { id: 1, name: '小明', email: 'ming@example.com' },
-    { id: 2, name: '小美', email: 'mei@example.com' },
-    { id: 3, name: '小王', email: 'wang@example.com' }
-  ];
-
   return (
-    <div style={{ padding: '20px' }}>
-      <h2>使用者清單</h2>
-      {/* 用 map 把每個 user 渲染出來 */}
-      {users.map(user => (
-        <div
-          key={user.id}
-          style={{
-            border: '1px solid #ccc',
-            padding: '10px',
-            marginBottom: '10px',
-            borderRadius: '8px'
-          }}
-        >
-          <h4>{user.name}</h4>
-          <p>{user.email}</p>
-        </div>
-      ))}
+    <div className='text-center py-20'>
+      <h1 className='text-3xl font-bold'>關於我們</h1>
+      <p className='text-gray-600 mt-4'>這裡是浩富的介紹內容。</p>
     </div>
   );
 }

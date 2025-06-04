@@ -1,0 +1,10 @@
+img.card-img-top {
+  height: 150px;
+  object-fit: contain;
+  padding: 10px;
+}
+.hover-shadow:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+  transition: all 0.3s ease;
+}

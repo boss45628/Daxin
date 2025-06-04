@@ -1,0 +1,41 @@
+/* 自訂 hover 顯示下拉 */
+.hover-dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.hover-dropdown > .dropdown-menu {
+  margin-top: 0.3rem;
+  transition: all 0.2s ease-in-out;
+}
+
+/* 深藍背景，白字，陰影 */
+.custom-navbar {
+  background-color: #1b2a4e; /* 專業深藍 */
+  padding: 12px 20px;
+  font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
+  font-weight: 500;
+}
+
+/* Dropdown hover 展開 */
+.hover-dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.navbar .nav-link {
+  margin-right: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #f0c040; /* 金色系強調色 */
+}
+
+.navbar-brand {
+  letter-spacing: 1px;
+}
+
+/* 下拉選單調整 */
+.dropdown-menu {
+  border-radius: 0.25rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

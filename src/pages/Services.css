@@ -1,0 +1,66 @@
+.service-container {
+  display: flex;
+  justify-content: left;
+  padding: 40px;
+  padding-left: 70px;
+}
+
+.service-box {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  border: 5px solid #ddd;
+  background-color: transparent;
+}
+
+/* 缺口文字區塊 */
+.cutout-text {
+  position: absolute;
+  top: 50%;
+  right: -70px; /* 讓文字落在正方形右側 */
+  transform: translateY(-50%);
+  background-color: white; /* 遮住邊框造成「缺口」視覺 */
+  padding: 12px;
+}
+
+.cutout-text h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 1000;
+  color: #333;
+}
+
+.cutout-text p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #666;
+}
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.tab-button {
+  font-size: 24px;
+  font-weight: 700;
+  color: #666;
+  background: transparent;
+  border: none;
+  padding: 10px 20px;
+  transition: all 0.2s ease-in-out;
+  border-bottom: 3px solid transparent;
+}
+
+.tab-button:hover {
+  color: #003366;
+  border-bottom: 3px solid #003366;
+}
+
+.tab-button.active {
+  color: #003366;
+  border-bottom: 3px solid #003366;
+}

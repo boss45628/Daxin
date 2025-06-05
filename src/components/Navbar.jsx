@@ -39,42 +39,62 @@ export default function Navbar() {
               </a>
               <ul className='dropdown-menu'>
                 <li>
-                  <Link className='dropdown-item' to='/Haofu'>
+                  <a
+                    className='dropdown-item'
+                    href='/Haofu'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
                     浩富會計師事務所
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link className='dropdown-item' to='/Haoxin'>
+                  <a
+                    className='dropdown-item'
+                    href='/Haoxin'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
                     浩信會計師事務所
-                  </Link>
+                  </a>
                 </li>
+
                 <li>
-                  <Link className='dropdown-item' to='/Fuxin'>
+                  <a
+                    className='dropdown-item'
+                    href='/Fuxin'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
                     富信聯合會計師事務所
-                  </Link>
+                  </a>
                 </li>
                 <li>
                   <a
                     className='dropdown-item'
                     href='https://www.andrewstw.com/'
                     target='_blank'
-                    rel='noreferrer'
+                    rel='noopener noreferrer'
                   >
                     安德信會計師事務所
                   </a>
+                </li>
+                <li>
                   <a
                     className='dropdown-item'
                     href='https://www.eehscpafirm.com.tw/contact-us.html'
                     target='_blank'
-                    rel='noreferrer'
+                    rel='noopener noreferrer'
                   >
                     力安會計師事務所
                   </a>
+                </li>
+                <li>
                   <a
                     className='dropdown-item'
                     href='https://www.youth-cpa.com.tw/web/index/index.jsp'
                     target='_blank'
-                    rel='noreferrer'
+                    rel='noopener noreferrer'
                   >
                     友士會計師事務所
                   </a>

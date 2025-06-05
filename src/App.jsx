@@ -1,35 +1,70 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+
+import HaofuNavbar from './components/HaofuNavbar';
+import HaoxinNavbar from './components/HaoxinNavbar';
+import FuxinNavbar from './components/FuxinNavbar';
+
+import HaofuFooter from './components/HaofuFooter';
+import HaoxinFooter from './components/HaoxinFooter';
+import FuxinFooter from './components/FuxinFooter';
+
 import HomePage from './pages/HomePage';
 import Haofu from './pages/Haofu';
 import Haoxin from './pages/Haoxin';
 import Fuxin from './pages/Fuxin';
 import Services from './pages/Services';
+import Teams from './pages/Teams';
+
+function LayoutWrapper({ children }) {
+  const location = useLocation();
+  //取得當下頁面名稱
+  const path = location.pathname;
+
+  // 預設共用元件
+  let CurrentNavbar = Navbar;
+  let CurrentFooter = Footer;
+
+  // 根據路徑切換專屬元件
+  if (path.includes('/Haofu')) {
+    CurrentNavbar = HaofuNavbar;
+    CurrentFooter = HaofuFooter;
+  } else if (path.includes('/Haoxin')) {
+    CurrentNavbar = HaoxinNavbar;
+    CurrentFooter = HaoxinFooter;
+  } else if (path.includes('/Fuxin')) {
+    CurrentNavbar = FuxinNavbar;
+    CurrentFooter = FuxinFooter;
+  }
+
+  return (
+    <div className='d-flex flex-column min-vh-100'>
+      <CurrentNavbar />
+      <main className='flex-fill'>
+        <div className='w-100'>{children}</div>
+      </main>
+      <CurrentFooter />
+    </div>
+  );
+}
 
 export default function App() {
   return (
     <BrowserRouter>
-      {/* 整頁結構 */}
-      <div className='d-flex flex-column min-vh-100'>
-        <Navbar />
-
-        {/* 中間內容區塊會自動撐開 */}
-        <main className='flex-fill'>
-          <div className='.w 100'>
-            <Routes>
-              <Route path='/' element={<HomePage />} />
-              <Route path='/HomePage' element={<HomePage />} />
-              <Route path='/Haofu' element={<Haofu />} />
-              <Route path='/Haoxin' element={<Haoxin />} />
-              <Route path='/Fuxin' element={<Fuxin />} />
-              <Route path='/Services' element={<Services />} />
-            </Routes>
-          </div>
-        </main>
-
-        <Footer />
-      </div>
+      <LayoutWrapper>
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/HomePage' element={<HomePage />} />
+          <Route path='/Haofu' element={<Haofu />} />
+          <Route path='/Haoxin' element={<Haoxin />} />
+          <Route path='/Fuxin' element={<Fuxin />} />
+          <Route path='/Services' element={<Services />} />
+          <Route path='/Haofu/Teams' element={<Teams />} />
+          <Route path='/Haoxin/Teams' element={<Teams />} />
+          <Route path='/Fuxin/Teams' element={<Teams />} />
+        </Routes>
+      </LayoutWrapper>
     </BrowserRouter>
   );
 }

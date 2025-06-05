@@ -1,15 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import './Services.css';
 
-export default function Fuxin() {
+export default function Teams() {
   const [activeTab, setActiveTab] = useState('audit');
-  useEffect(() => {
-    document.title = '富信聯合會計師事務所';
-    const titleimg = document.querySelector("Link[rel='icon']");
-    if (titleimg) {
-      titleimg.href = '/img/富信Logo.png';
-    }
-  }, []);
+
   const tabs = [
     {
       id: 'audit',
@@ -120,6 +114,38 @@ export default function Fuxin() {
       ]
     },
     {
+      id: 'payroll',
+      label: '會計及薪資委外服務',
+      content: 'Accounting and Payroll',
+      cards: [
+        {
+          number: '01',
+          title: '會計服務',
+          items: [
+            '會計帳務處理服務',
+            '財務報表編製',
+            '營利事業所得稅結算申報',
+            '代辦加值型及非加值型營業稅申報',
+            '各類所得扣繳申報',
+            '兩稅合一規劃及輔導',
+            '國際財務會計準則（IFRS）導入諮詢'
+          ]
+        },
+        {
+          number: '02',
+          title: '薪資委外服務',
+          items: [
+            '薪資架構及組成之檢視',
+            '薪資作業制度之建置',
+            '薪資制度與福利制度之諮詢',
+            '員工勞保、健保加退保作業',
+            '薪資處理',
+            '相關薪資及勞工法令諮詢'
+          ]
+        }
+      ]
+    },
+    {
       id: 'investment',
       label: '投資諮詢及工商登記服務',
       content: 'Investment and Registration',
@@ -146,6 +172,49 @@ export default function Fuxin() {
             '特許行業之設立登記',
             '外籍人員工作許可及居留申請'
           ]
+        }
+      ]
+    },
+    {
+      id: 'inherit',
+      label: '家族企業傳承及財富管理',
+      content: 'Succession and  Management',
+      cards: [
+        {
+          number: '01',
+          title: '財富規劃',
+          items: ['退休規劃', '家醫服務', '教育基金規劃', '個人財產風險管理']
+        },
+        {
+          number: '02',
+          title: '稅務規劃',
+          items: ['台灣稅務規劃', '跨國稅務規劃']
+        },
+        {
+          number: '03',
+          title: '投資規劃',
+          items: [
+            '境內／外信託諮詢與設立',
+            '投資組合與費用控管',
+            '公益基金會規劃',
+            '境外控股公司規劃'
+          ]
+        },
+        {
+          number: '04',
+          title: '財務規劃',
+          items: [
+            '融資規劃',
+            '財務風險管理',
+            '財務報表與績效',
+            '資產管理',
+            '營運資金管理規劃'
+          ]
+        },
+        {
+          number: '05',
+          title: '贈與及財產分配規劃',
+          items: ['海外資產遺產規劃', '遺產稅及贈與稅之申報及節稅規劃']
         }
       ]
     },

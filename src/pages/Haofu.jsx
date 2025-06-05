@@ -1,8 +1,17 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Services.css';
 
 export default function Haofu() {
   const [activeTab, setActiveTab] = useState('tax');
+
+  useEffect(() => {
+    document.title = '浩富會計師事務所';
+    // 切換 titleimg
+    const titleimg = document.querySelector("link[rel='icon']");
+    if (titleimg) {
+      titleimg.href = '/img/浩富Logo.png'; // 換成你的專屬 icon 路徑
+    }
+  }, []);
 
   const tabs = [
     {

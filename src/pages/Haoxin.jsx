@@ -1,8 +1,15 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Services.css';
 
 export default function Haoxin() {
   const [activeTab, setActiveTab] = useState('tax');
+  useEffect(() => {
+    document.title = '浩信會計師事務所';
+    const titleimg = document.querySelector("link[rel='icon']");
+    if (titleimg) {
+      titleimg.href = '/img/浩信Logo.png';
+    }
+  }, []);
 
   const tabs = [
     {

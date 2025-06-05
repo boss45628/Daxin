@@ -39,14 +39,9 @@ export default function Navbar() {
               </a>
               <ul className='dropdown-menu'>
                 <li>
-                  <a
-                    className='dropdown-item'
-                    href='/Haofu'
-                    target='_blank'
-                    rel='noreferrer'
-                  >
+                  <Link className='dropdown-item' to='/Haofu'>
                     浩富會計師事務所
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <Link className='dropdown-item' to='/Haoxin'>

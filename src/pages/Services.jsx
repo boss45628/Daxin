@@ -217,6 +217,53 @@ export default function Services() {
           items: ['海外資產遺產規劃', '遺產稅及贈與稅之申報及節稅規劃']
         }
       ]
+    },
+    {
+      id: 'ESG',
+      label: 'ESG專業服務',
+      content: 'ESG Professional Services',
+      cards: [
+        {
+          number: '01',
+          title: '永續報告代編服務',
+          items: [
+            '輔導永續報告書大綱架構設計',
+            'ESG數據及資訊蒐集方法諮詢',
+            '永續報告書編制與諮詢（GRI）',
+            '永續會計準則資訊揭露（SASB）',
+            '永續報告書編製指導',
+            '提供報告書揭露優化建議'
+          ]
+        },
+        {
+          number: '02',
+          title: '永續報告確信服務',
+          items: [
+            '永續保告書之確信',
+            '報告書 、 內控及管理辦法之優化建議',
+            '協助內部稽核及公司治理推行'
+          ]
+        },
+        {
+          number: '03',
+          title: '淨零碳排管理諮詢服務',
+          items: [
+            '溫室氣體盤查及淨零排放減量規劃',
+            '碳權與碳會計處理機制諮詢顧問',
+            '協助政府補助申請'
+          ]
+        },
+        {
+          number: '04',
+          title: '企業永續管理服務諮詢',
+          items: [
+            '永續治理現況盤點',
+            '永續治理機制與委員會建立',
+            '提供改善、優化建議',
+            '協助政府補助申請'
+          ]
+        }
+      ]
     }
   ];
 
@@ -237,7 +284,8 @@ export default function Services() {
             '家族企業傳承及財富管理',
             '稅務服務',
             '會計及薪資委外服務',
-            '審計及確信服務'
+            '審計及確信服務',
+            'ESG專業服務'
           ].map((title, i) => (
             <div className={`carousel-item ${i === 0 ? 'active' : ''}`} key={i}>
               <img
@@ -296,7 +344,12 @@ export default function Services() {
         <img
           src={`/img/${tabs.find(t => t.id === activeTab).label}_1.png`}
           className='img-fluid d-block mx-auto'
-          style={{ width: '70%', padding: '20px' }}
+          style={{
+            width: '1000px', // 固定寬度
+            height: '300px', // 固定高度
+            objectFit: 'cover',
+            padding: '20px'
+          }}
           alt={tabs.find(t => t.id === activeTab).label}
         />
 

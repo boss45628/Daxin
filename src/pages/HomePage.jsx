@@ -16,7 +16,8 @@ export default function HomePage() {
             '家族企業傳承及財富管理',
             '稅務服務',
             '會計及薪資委外服務',
-            '審計及確信服務'
+            '審計及確信服務',
+            'ESG專業服務'
           ].map((title, i) => (
             <div className={`carousel-item ${i === 0 ? 'active' : ''}`} key={i}>
               <img

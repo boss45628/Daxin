@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
-export default function Navbar() {
+export default function HaofuNavbar() {
   return (
     <nav className='navbar navbar-expand-lg shadow-sm custom-navbar'>
       <div className='container'>
         {/* LOGO / 事務所名稱 */}
         <Link className='navbar-brand text-white fw-bold fs-5' to='/HomePage'>
-          大信台灣會計事務所
+          浩富會計師事務所
         </Link>
 
         {/* 手機選單按鈕 */}
@@ -39,14 +39,9 @@ export default function Navbar() {
               </a>
               <ul className='dropdown-menu'>
                 <li>
-                  <a
-                    className='dropdown-item'
-                    href='/Haofu'
-                    target='_blank'
-                    rel='noreferrer'
-                  >
+                  <Link className='dropdown-item' to='/Haofu'>
                     浩富會計師事務所
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <Link className='dropdown-item' to='/Haoxin'>

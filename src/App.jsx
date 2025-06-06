@@ -15,25 +15,25 @@ import Haofu from './pages/Haofu';
 import Haoxin from './pages/Haoxin';
 import Fuxin from './pages/Fuxin';
 import Services from './pages/Services';
-import Teams from './pages/Teams';
+import Teams from './pages/TeamList';
 
 function LayoutWrapper({ children }) {
   const location = useLocation();
   //取得當下頁面名稱
-  const path = location.pathname;
+  const path = location.pathname.toLowerCase(); //全部轉換小寫
 
   // 預設共用元件
   let CurrentNavbar = Navbar;
   let CurrentFooter = Footer;
 
   // 根據路徑切換專屬元件
-  if (path.includes('/Haofu')) {
+  if (path.startsWith('/haofu')) {
     CurrentNavbar = HaofuNavbar;
     CurrentFooter = HaofuFooter;
-  } else if (path.includes('/Haoxin')) {
+  } else if (path.startsWith('/haoxin')) {
     CurrentNavbar = HaoxinNavbar;
     CurrentFooter = HaoxinFooter;
-  } else if (path.includes('/Fuxin')) {
+  } else if (path.startsWith('/fuxin')) {
     CurrentNavbar = FuxinNavbar;
     CurrentFooter = FuxinFooter;
   }

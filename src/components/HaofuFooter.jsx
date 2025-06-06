@@ -10,6 +10,9 @@ export default function HaofuFooter() {
           台北市信義區忠孝東路四段563號9樓
         </a>
       </div>
+      <small>&copy; 電話：886 (2) 2718 8686</small> <br></br>
+      <small>&copy; 傳真：886 (2) 2718 1378</small> <br></br>
+      <small>&copy; 電子信箱：hw@hwgroup.com.tw</small> <br></br>
       <small>&copy; 2025 浩富會計師事務所. All rights reserved.</small>
     </footer>
   );

@@ -14,6 +14,9 @@ import HomePage from './pages/HomePage';
 import Haofu from './pages/Haofu';
 import Haoxin from './pages/Haoxin';
 import Fuxin from './pages/Fuxin';
+import ServicesHaofu from './pages/ServicesHaofu';
+import ServicesHaoxin from './pages/ServicesHaoxin';
+import ServicesFuxin from './pages/ServicesFuxin';
 import Services from './pages/Services';
 import Teams from './pages/TeamList';
 
@@ -59,6 +62,9 @@ export default function App() {
           <Route path='/Haofu' element={<Haofu />} />
           <Route path='/Haoxin' element={<Haoxin />} />
           <Route path='/Fuxin' element={<Fuxin />} />
+          <Route path='/Haofu/ServicesHaofu' element={<ServicesHaofu />} />
+          <Route path='/Haoxin/ServicesHaoxin' element={<ServicesHaoxin />} />
+          <Route path='/Fuxin/ServicesFuxin' element={<ServicesFuxin />} />
           <Route path='/Services' element={<Services />} />
           <Route path='/Haofu/Teams' element={<Teams />} />
           <Route path='/Haoxin/Teams' element={<Teams />} />

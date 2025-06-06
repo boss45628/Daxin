@@ -28,7 +28,7 @@ export default function HaoxinNavbar() {
               </Link>
             </li>
             <li className='nav-item'>
-              <Link className='nav-link text-white' to='/Haoxin'>
+              <Link className='nav-link text-white' to='/Haoxin/ServicesHaoxin'>
                 服務項目
               </Link>
             </li>

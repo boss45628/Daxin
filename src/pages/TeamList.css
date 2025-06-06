@@ -1,6 +1,7 @@
 .team-section {
   text-align: center;
-  padding: 80px 40px; /* 上下留白加大 */
+  background: linear-gradient(to bottom, #ffffff, #f0f4f8);
+  font-family: 'Noto Sans TC', sans-serif;
 }
 
 /* 輪播區 */
@@ -10,6 +11,7 @@
   justify-content: center;
   gap: 1rem;
   margin-bottom: 2rem;
+  padding: 20px;
 }
 
 .arrow {
@@ -35,20 +37,20 @@
   object-fit: cover;
 }
 
-.overlay {
-  position: absolute;
-  bottom: 0;
-  background: rgba(0, 60, 120, 0.9);
-  width: 100%;
-  color: white;
-  text-align: center;
-  padding: 6px 4px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
 .hover-card:hover .overlay {
   opacity: 1;
+}
+
+.hover-card .overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+  background-color: rgba(10, 10, 10, 0.6);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 /* 下方介紹區 */
@@ -75,17 +77,23 @@
   max-width: 700px;
   text-align: left;
   border-radius: 10px;
+  transition: all 0.3s ease;
 }
-
+.hover-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
 .profile-card h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 1.75rem;
+  margin-bottom: 20px;
   color: #004488;
 }
 
 .profile-card h5 {
-  margin-top: 30px;
-  font-size: 18px;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
   color: #888;
 }
 
@@ -98,4 +106,40 @@
   margin-bottom: 8px;
   font-size: 16px;
   line-height: 1.6;
+}
+.team-hero {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(50, 50, 70, 0.7); /* 灰藍色半透明底 */
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.overlay h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto;
 }

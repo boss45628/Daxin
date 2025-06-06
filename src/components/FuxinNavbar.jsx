@@ -28,7 +28,7 @@ export default function FuxinNavbar() {
               </Link>
             </li>
             <li className='nav-item'>
-              <Link className='nav-link text-white' to='/Fuxin'>
+              <Link className='nav-link text-white' to='/Fuxin/ServicesFuxin'>
                 服務項目
               </Link>
             </li>

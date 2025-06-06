@@ -72,10 +72,10 @@ export default function TeamList() {
     ? 'fuxin'
     : '';
 
-  const teamMembers = allMembers.filter(m => m.office === office);
-  const [startIndex, setStartIndex] = useState(0);
-  const [selectedIndex, setSelectedIndex] = useState(0);
-  const visibleCount = 3;
+  const teamMembers = allMembers.filter(m => m.office === office); //抓目前公司所對應的團隊成員
+  const [startIndex, setStartIndex] = useState(0); //輪播起始位置
+  const [selectedIndex, setSelectedIndex] = useState(0); //選擇成員
+  const visibleCount = 3; //設定最多一次顯示幾張輪播卡
 
   useEffect(() => {
     setStartIndex(0);
@@ -84,8 +84,8 @@ export default function TeamList() {
 
   if (!teamMembers.length) return <p>目前尚無資料</p>;
 
-  const visible = teamMembers.slice(startIndex, startIndex + visibleCount);
-  const selected = teamMembers[selectedIndex] || teamMembers[0];
+  const visible = teamMembers.slice(startIndex, startIndex + visibleCount); //目前要顯示在輪播區的幾筆資料
+  const selected = teamMembers[selectedIndex] || teamMembers[0]; //目前選中的人
 
   const handlePrev = () => {
     const newStart =
@@ -105,6 +105,15 @@ export default function TeamList() {
 
   return (
     <div className='team-section'>
+      <div className='team-hero'>
+        <img className='banner-image' src='/img/team.png' alt='專業團隊' />
+        <div className='overlay'>
+          <h2>專業團隊</h2>
+          <p>
+            我們擁有多年產業經驗的註冊會計師團隊，提供全方位財稅、審計、法遵等專業服務。
+          </p>
+        </div>
+      </div>
       <div className='carousel-wrapper'>
         <button className='arrow' onClick={handlePrev}>
           {'<'}

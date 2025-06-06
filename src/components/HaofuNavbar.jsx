@@ -28,7 +28,7 @@ export default function HaofuNavbar() {
               </Link>
             </li>
             <li className='nav-item'>
-              <Link className='nav-link text-white' to='/Haofu'>
+              <Link className='nav-link text-white' to='/Haofu/ServicesHaofu'>
                 服務項目
               </Link>
             </li>

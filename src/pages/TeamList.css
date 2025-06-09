@@ -110,8 +110,8 @@
 .team-hero {
   position: relative;
   width: 100%;
-  height: auto;
-  overflow: hidden;
+  max-width: 2000px;
+  margin: 0 auto;
 }
 
 .banner-image {
@@ -125,7 +125,7 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: rgba(50, 50, 70, 0.7); /* 灰藍色半透明底 */
+  background-color: rgba(50, 50, 70, 0.7);
   color: white;
   text-align: center;
   padding: 30px 20px;
@@ -142,4 +142,19 @@
   line-height: 1.6;
   max-width: 900px;
   margin: 0 auto;
+}
+
+/* 📱 手機版調整 */
+@media (max-width: 768px) {
+  .overlay {
+    padding: 20px 10px;
+  }
+
+  .overlay h2 {
+    font-size: 1.5rem;
+  }
+
+  .overlay p {
+    font-size: 0.9rem;
+  }
 }

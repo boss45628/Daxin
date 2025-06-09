@@ -345,8 +345,9 @@ export default function Services() {
           src={`/img/${tabs.find(t => t.id === activeTab).label}_1.png`}
           className='img-fluid d-block mx-auto'
           style={{
-            width: '1000px', // 固定寬度
-            height: '300px', // 固定高度
+            width: '100%',
+            maxWidth: '1000px', // 最大寬度限制，桌機不會超過
+            height: 'auto', // 自動等比例縮放高度
             objectFit: 'cover',
             padding: '20px'
           }}

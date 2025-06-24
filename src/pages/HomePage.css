@@ -1,10 +1,69 @@
+/* ✅ 圖片樣式（卡片 Logo） */
 img.card-img-top {
   height: 150px;
   object-fit: contain;
   padding: 10px;
 }
+
+/* ✅ 卡片 hover 動畫效果 */
 .hover-shadow:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
   transform: translateY(-4px);
   transition: all 0.3s ease;
+}
+
+/* ✅ 主容器：地圖 + 卡片左右排列 */
+.map-content-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* ✅ 地圖區塊 */
+.map-svg {
+  flex: 0 0 35%;
+  min-width: 300px;
+  position: relative;
+}
+
+/* ✅ 卡片列表容器 */
+.card-list {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* ✅ 單張卡片寬度設定：一排兩張 */
+.card-list .card-wrapper {
+  flex: 0 0 calc(50% - 10px);
+}
+
+/* ✅ 彈出視窗樣式（中央浮出卡片） */
+.hover-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.5); /* 兩倍放大 */
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: opacity 0.2s ease;
+  pointer-events: none; /* 不干擾滑鼠操作 */
+  max-width: 90vw;
+}
+
+/* ✅ 若要支援手機響應式，針對 modal 縮放處理 */
+@media (max-width: 768px) {
+  .hover-modal {
+    transform: translate(-50%, -50%) scale(1);
+    padding: 16px;
+  }
+
+  .card-list .card-wrapper {
+    flex: 0 0 100%; /* 手機一排一張卡片 */
+  }
 }

@@ -4,10 +4,10 @@ export default function HaoxinFooter() {
       <div class='footer-section'>
         <h5>服務據點</h5>
         <a
-          href='https://maps.google.com?q=台北市信義區忠孝東路四段563號9樓'
+          href='https://maps.google.com?q=台中市西屯區市政北七路186號12樓之5'
           target='_blank'
         >
-          台北市信義區忠孝東路四段563號9樓
+          台中市西屯區市政北七路186號12樓之5
         </a>
       </div>
       <small>&copy; 電話：886 (2) 2718 8686</small> <br></br>

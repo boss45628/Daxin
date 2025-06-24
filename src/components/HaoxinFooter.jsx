@@ -10,8 +10,8 @@ export default function HaoxinFooter() {
           台中市西屯區市政北七路186號12樓之5
         </a>
       </div>
-      <small>&copy; 電話：886 (2) 2718 8686</small> <br></br>
-      <small>&copy; 傳真：886 (2) 2718 1378</small> <br></br>
+      <small>&copy; 電話：886 (4) 3502 8686</small> <br></br>
+      <small>&copy; 傳真：886 (4) 3502 1378</small> <br></br>
       <small>&copy; 電子信箱：hw@hwgroup.com.tw</small> <br></br>
       <small>&copy; 2025 浩信會計師事務所. All rights reserved.</small>
     </footer>

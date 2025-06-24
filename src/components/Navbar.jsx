@@ -51,22 +51,11 @@ export default function Navbar() {
                 <li>
                   <a
                     className='dropdown-item'
-                    href='/Haoxin'
+                    href='https://www.eehscpafirm.com.tw/contact-us.html'
                     target='_blank'
                     rel='noopener noreferrer'
                   >
-                    浩信會計師事務所
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    className='dropdown-item'
-                    href='/Fuxin'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
-                    富信聯合會計師事務所
+                    力安會計師事務所
                   </a>
                 </li>
                 <li>
@@ -82,11 +71,11 @@ export default function Navbar() {
                 <li>
                   <a
                     className='dropdown-item'
-                    href='https://www.eehscpafirm.com.tw/contact-us.html'
+                    href='/Fuxin'
                     target='_blank'
                     rel='noopener noreferrer'
                   >
-                    力安會計師事務所
+                    富信聯合會計師事務所
                   </a>
                 </li>
                 <li>
@@ -97,6 +86,16 @@ export default function Navbar() {
                     rel='noopener noreferrer'
                   >
                     友士會計師事務所
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className='dropdown-item'
+                    href='/Haoxin'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    浩信會計師事務所
                   </a>
                 </li>
               </ul>

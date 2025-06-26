@@ -51,11 +51,11 @@ export default function Navbar() {
                 <li>
                   <a
                     className='dropdown-item'
-                    href='https://www.eehscpafirm.com.tw/contact-us.html'
+                    href='https://www.youth-cpa.com.tw/web/index/index.jsp'
                     target='_blank'
                     rel='noopener noreferrer'
                   >
-                    力安會計師事務所
+                    友士會計師事務所
                   </a>
                 </li>
                 <li>
@@ -81,11 +81,11 @@ export default function Navbar() {
                 <li>
                   <a
                     className='dropdown-item'
-                    href='https://www.youth-cpa.com.tw/web/index/index.jsp'
+                    href='https://www.eehscpafirm.com.tw/contact-us.html'
                     target='_blank'
                     rel='noopener noreferrer'
                   >
-                    友士會計師事務所
+                    力安會計師事務所
                   </a>
                 </li>
                 <li>

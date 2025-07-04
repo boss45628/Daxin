@@ -37,7 +37,6 @@ export default function Navbar() {
               </Link>
             </li>
 
-            {/* 修正這裡 */}
             <li
               className={`nav-item dropdown hover-dropdown ${
                 isDropdownOpen ? 'show' : ''

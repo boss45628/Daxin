@@ -1,7 +1,11 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import './Navbar.css';
 
 export default function Navbar() {
+  // 設定關於我們的開關
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
   return (
     <nav className='navbar navbar-expand-lg shadow-sm custom-navbar'>
       <div className='container'>
@@ -33,11 +37,22 @@ export default function Navbar() {
               </Link>
             </li>
 
-            <li className='nav-item dropdown hover-dropdown'>
-              <a className='nav-link dropdown-toggle text-white' href='#'>
+            {/* 修正這裡 */}
+            <li
+              className={`nav-item dropdown hover-dropdown ${
+                isDropdownOpen ? 'show' : ''
+              }`}
+              onMouseEnter={() => setIsDropdownOpen(true)}
+              onMouseLeave={() => setIsDropdownOpen(false)}
+            >
+              <a
+                className='nav-link dropdown-toggle text-white'
+                href='#'
+                role='button'
+              >
                 關於我們
               </a>
-              <ul className='dropdown-menu'>
+              <ul className={`dropdown-menu ${isDropdownOpen ? 'show' : ''}`}>
                 <li>
                   <a
                     className='dropdown-item'

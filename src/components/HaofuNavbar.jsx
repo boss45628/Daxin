@@ -7,7 +7,7 @@ export default function HaofuNavbar() {
       <div className='container'>
         {/* LOGO / 事務所名稱 */}
         <Link className='navbar-brand text-white fw-bold fs-5' to='/Haofu'>
-          浩富會計師事務所
+          浩富聯合會計師事務所
         </Link>
 
         {/* 手機選單按鈕 */}

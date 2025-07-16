@@ -7,7 +7,7 @@ export default function HaoxinNavbar() {
       <div className='container'>
         {/* LOGO / 事務所名稱 */}
         <Link className='navbar-brand text-white fw-bold fs-5' to='/Haoxin'>
-          浩信會計師事務所
+          浩信聯合會計師事務所
         </Link>
 
         {/* 手機選單按鈕 */}

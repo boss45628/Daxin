@@ -16,7 +16,7 @@ export default function Navbar() {
 
         {/* 手機選單按鈕 */}
         <button
-          className='navbar-toggler text-white border-white'
+          className='navbar-toggler border-0'
           type='button'
           data-bs-toggle='collapse'
           data-bs-target='#navbarNav'
@@ -59,7 +59,7 @@ export default function Navbar() {
                     target='_blank'
                     rel='noopener noreferrer'
                   >
-                    浩富會計師事務所
+                    浩富聯合會計師事務所
                   </a>
                 </li>
                 <li>
@@ -109,7 +109,7 @@ export default function Navbar() {
                     target='_blank'
                     rel='noopener noreferrer'
                   >
-                    浩信會計師事務所
+                    浩信聯合會計師事務所
                   </a>
                 </li>
               </ul>

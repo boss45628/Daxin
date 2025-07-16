@@ -38,14 +38,6 @@ export default function HaoxinNavbar() {
                 專業團隊
               </Link>
             </li>
-            <li className='nav-item '>
-              <a
-                className='nav-link text-white'
-                href='http://www.hwgroup.com.tw/'
-              >
-                浩富集團
-              </a>
-            </li>
           </ul>
         </div>
       </div>

@@ -7,7 +7,7 @@ const points = [
     cx: 771,
     cy: 285,
     fill: 'yellow',
-    label: '浩富會計師事務所',
+    label: '浩富聯合會計師事務所',
     img: '浩富Logo.png',
     desc: '提供企業與個人稅務規劃與報稅服務。'
   },
@@ -52,7 +52,7 @@ const points = [
     cx: 590,
     cy: 478,
     fill: 'pink',
-    label: '浩信會計師事務所',
+    label: '浩信聯合會計師事務所',
     img: '浩信Logo.png',
     desc: '協助公司快速完成設立流程與變更登記。'
   }

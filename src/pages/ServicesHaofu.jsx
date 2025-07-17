@@ -142,14 +142,7 @@ export default function ServicesHaofu() {
         data-bs-interval='3000'
       >
         <div className='carousel-inner'>
-          {[
-            '投資諮詢及工商登記服務',
-            '家族企業傳承及財富管理',
-            '稅務服務',
-            '會計及薪資委外服務',
-            '審計及確信服務',
-            'ESG專業服務'
-          ].map((title, i) => (
+          {['家族企業傳承及財富管理', '稅務服務'].map((title, i) => (
             <div className={`carousel-item ${i === 0 ? 'active' : ''}`} key={i}>
               <img
                 src={`/img/${title}.png`}

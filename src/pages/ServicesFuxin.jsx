@@ -212,9 +212,7 @@ export default function ServicesFuxin() {
         <div className='carousel-inner'>
           {[
             '投資諮詢及工商登記服務',
-            '家族企業傳承及財富管理',
             '稅務服務',
-            '會計及薪資委外服務',
             '審計及確信服務',
             'ESG專業服務'
           ].map((title, i) => (

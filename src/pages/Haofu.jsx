@@ -3,7 +3,7 @@ import './background.css';
 
 export default function Haofu() {
   useEffect(() => {
-    document.title = '浩富會計師事務所';
+    document.title = '浩富聯合會計師事務所';
     // 切換 titleimg
     const titleimg = document.querySelector("link[rel='icon']");
     if (titleimg) {
@@ -15,7 +15,7 @@ export default function Haofu() {
     <div className='team-hero'>
       <img className='image' src='/img/Haofu背景.png' alt='專業團隊' />
       <div className='overlay'>
-        <h2>浩富會計師事務所</h2>
+        <h2>浩富聯合會計師事務所</h2>
         <p>專業．誠信．信賴</p>
       </div>
     </div>

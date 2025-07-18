@@ -49,8 +49,8 @@ const points = [
   },
   {
     id: 'point_F',
-    cx: 590,
-    cy: 478,
+    cx: 758,
+    cy: 282,
     fill: 'pink',
     label: '浩信聯合會計師事務所',
     img: '浩信Logo.png',

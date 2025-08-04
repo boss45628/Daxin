@@ -11,11 +11,16 @@ export default function Haoxin() {
   }, []);
 
   return (
-    <div className='team-hero'>
-      <img className='image' src='/img/Haofu背景.png' alt='專業團隊' />
-      <div className='overlay'>
-        <h2>浩信聯合會計師事務所</h2>
-        <p>專業．誠信．信賴</p>
+    <div>
+      <header>
+        <title>浩信聯合會計師事務所</title>
+      </header>
+      <div className='team-hero'>
+        <img className='image' src='/img/Haofu背景.png' alt='專業團隊' />
+        <div className='overlay'>
+          <h2>浩信聯合會計師事務所</h2>
+          <p>專業．誠信．信賴</p>
+        </div>
       </div>
     </div>
   );

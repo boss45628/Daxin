@@ -102,11 +102,16 @@
 <text x="512" y="170" font-size="20" fill="black" font-weight="bold" stroke="white" stroke-width="0.1" text-anchor="middle">友士會計師事務所</text>
 <circle cx="420" cy="192" r="9" fill="blue" />
 <text x="522" y="200" font-size="20" fill="black" font-weight="bold" stroke="white" stroke-width="0.1" text-anchor="middle">安德信會計師事務所</text>
-<circle cx="420" cy="222" r="9" fill="orange" />
-<text x="532" y="230" font-size="20" fill="black" font-weight="bold" stroke="white" stroke-width="0.1" text-anchor="middle">富信聯合會計師事務所</text>
+<!--<circle cx="420" cy="222" r="9" fill="orange" /> -->
+<!--<text x="532" y="230" font-size="20" fill="black" font-weight="bold" stroke="white" stroke-width="0.1" text-anchor="middle">富信聯合會計師事務所</text> -->
 <circle cx="420" cy="252" r="9" fill="purple" />
 <text x="512" y="260" font-size="20" fill="black" font-weight="bold" stroke="white" stroke-width="0.1" text-anchor="middle">力安會計師事務所</text>
-<circle cx="420" cy="282" r="9" fill="pink" />
-<text x="532" y="290" font-size="20" fill="black" font-weight="bold" stroke="white" stroke-width="0.1" text-anchor="middle">浩信聯合會計師事務所</text>
+<!--<circle cx="420" cy="282" r="9" fill="pink" /> -->
+<!--<text x="532" y="290" font-size="20" fill="black" font-weight="bold" stroke="white" stroke-width="0.1" text-anchor="middle">浩信聯合會計師事務所</text> -->
+<circle cx="420" cy="222" r="9" fill="orange" />
+<text x="532" y="230" font-size="20" fill="black" font-weight="bold" stroke="white" stroke-width="0.1" text-anchor="middle">浩信聯合會計師事務所</text>
 </g>
 </svg>
+
+
+
